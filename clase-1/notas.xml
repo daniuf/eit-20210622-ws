@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notas>
+ <nota>
+  <de email="tove@gmail.com">Tove</de>
+  <para email="jani@gmail.com">Jani</para>
+  <titulo>Reminder</titulo>
+  <cuerpo>Don't forget me this weekend!</cuerpo>
+  <fecha>2021-06-22</fecha>
+ </nota>
+ <nota>
+  <de email="">Dani</de>
+  <para email="">Martin</para>
+  <titulo>Recordatorio</titulo>
+  <cuerpo>Otro mensaje!</cuerpo>
+  <fecha>2021-06-23</fecha>
+ </nota>
+ <nota>
+  <de email="">Daniel</de>
+  <para email="">Juan</para>
+  <titulo>Recordatorio 2</titulo>
+  <cuerpo>Otro mensaje 2!</cuerpo>
+  <fecha>2021-06-23</fecha>
+ </nota>
+</notas>
