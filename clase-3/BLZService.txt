@@ -1,0 +1,16 @@
+
+1) URL: http://www.thomas-bayer.com/axis2/services/BLZService
+
+2) Identificar las operaciones (metodos) disponibles de este Web Service
+
+- getBank
+  - input
+    - mensaje: tns:getBank
+      - parametros: element="tns:getBank"
+        - element name="getBank" 
+	  - type="tns:getBankType"
+            - element "blz" => string
+
+  - output
+    - mensaje: tns:getBankResponse
+       ....
