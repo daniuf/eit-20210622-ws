@@ -18,7 +18,7 @@ $json_input_encode = json_encode($json_input);
 curl_setopt($ch, CURLOPT_URL, $url);//1-URL adonde vamos a formular peticion
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");//2-Seteo metodo HTTP POST
 curl_setopt($ch, CURLOPT_POSTFIELDS, $json_input_encode);//3-Enviamos el JSON en el cuerpo de la peticion
-curl_setopt($ch, CURLOPT_HTTPHEADER, "'Content-type': 'application/json; charset=UTF-8'");//4-Indico en el header que lo que envio es un JSON
+curl_setopt($ch, CURLOPT_HTTPHEADER, array("'Content-type': 'application/json; charset=UTF-8'"));//4-Indico en el header que lo que envio es un JSON
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);//5-Forzamos devolucion a una variable
 
 $json = curl_exec($ch);

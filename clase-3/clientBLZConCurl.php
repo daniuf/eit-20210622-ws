@@ -21,6 +21,10 @@ $xml = curl_exec($ch);
 
 if ($xml) {
   var_dump($xml);
+  $xml_limpio = str_replace(array('soapenv:', 'ns1:'), '', $xml);
+  $data = simplexml_load_string($xml_limpio);
+  var_dump($data);
+  //Uso la info del WS para lo que necesite
 }
 
 curl_close($ch);

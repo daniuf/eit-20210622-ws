@@ -1,0 +1,26 @@
+
+RewriteEngine On
+
+ErrorDocument 404	/clase-4/error.php
+ErrorDocument 405	/clase-4/error.php
+
+# PATCH
+#RewriteCond %{REQUEST_METHOD} =PATCH
+
+# PUT
+RewriteCond %{REQUEST_METHOD} =PUT
+RewriteRule ^actualizarUsuario/([0-9a-zA-Z]+)$	actualizarUsuario.php?id=$1 [END]
+
+# DELETE
+RewriteCond %{REQUEST_METHOD} =DELETE
+RewriteRule ^borrarUsuario/([0-9a-zA-Z]+)$	borrarUsuario.php?id=$1 [END]
+
+# POST
+RewriteCond %{REQUEST_METHOD} =POST
+RewriteRule ^crearUsuario$			crearUsuario.php [END]
+
+# GET
+RewriteCond %{REQUEST_METHOD} =GET
+RewriteRule ^obtenerUsuarios$					obtenerUsuarios.php [END]
+RewriteRule ^obtenerUsuario/([0-9a-zA-Z]+)/([a-z]+)$	obtenerUsuario.php?id=$1&formato=$2 [END]
+
